@@ -1,0 +1,128 @@
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    position:relative;
+    top: 2rem;
+    padding: 2rem;
+    width: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold; 
+}
+
+h2 {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#winMessage {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*Game board*/
+#board {
+    margin-top: 2rem;
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    gap: 1rem;
+    width: 100%;
+}
+
+.tile {
+    background-color: lightgray;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.set {
+    margin-top: 1rem;
+    background-color: gold;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.firstSet {
+    margin-top: 2rem;
+    background-color: gold;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#setOne {
+    background-color: rgb(251, 212, 0);
+}
+
+#setTwo {
+    background-color: rgb(105, 227, 82);
+}
+
+#setThree {
+    background-color: rgb(84, 146, 255);
+}
+
+#setFour {
+    background-color: rgb(223, 123, 234);
+}
+
+/*Game controls*/
+
+#submit {
+    grid-area: submit;
+}
+
+#shuffle {
+    grid-area: shuffle;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#controls {
+    margin: 2rem auto;
+    text-align: center;
+    width: 60%;
+    display: grid;
+    grid-template:
+        'submit submit'
+        'shuffle clear';
+    gap: 1rem;
+}
+
+button {
+    background-color: lightblue;
+    color: white;
+    border: 1px solid gray;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
